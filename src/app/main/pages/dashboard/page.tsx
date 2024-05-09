@@ -7,7 +7,7 @@ const DashboardPage = () => {
         Dashboard
       </h1>
     </div>
-  )
-}
+  );
+};
 
-export default DashboardPage;
+export default DashboardPage

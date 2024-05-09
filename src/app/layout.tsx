@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider"
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = DM_Sans({ subsets: ["latin"] });
+const font = DM_Sans({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "SAAS",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"

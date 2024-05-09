@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MenuIcon } from 'lucide-react';
-// import DashboardPage from '@/app/main/pages/dashboard/page';
+import DashboardPage from '@/app/main/pages/dashboard/page';
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
         <aside className="flex items-center gap-[2px]">
         <p className="text-3xl font-bold">SA</p>
         <Image
-          src="/fuzzieLogo.png"
+          src="/fuzzieLogo.png"  
           width={15}
           height={15}
           alt="fuzzie logo"
@@ -53,7 +53,6 @@ const Navbar = (props: Props) => {
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
               {/* wire up user */}
             {true ? 'Dashboard' : 'Get Started'}
-          
           </span>
         </Link>
         {
@@ -62,8 +61,9 @@ const Navbar = (props: Props) => {
         <MenuIcon className="md:hidden"/>
       </aside>
     </header>
-
   )
 }
 
-export default Navbar;
+export {Navbar,DashboardPage};
+
+export default Navbar
